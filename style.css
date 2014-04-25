@@ -1,18 +1,60 @@
 /*
- Theme Name:   Mid America Car Tell Twenty Fourteen Child
- Theme URI:    http://example.com/twenty-fourteen-child/
- Description:  LowerMedia Custom Twenty Fourteen Child Theme
+ Theme Name:   Mid America Car Tell Twenty Twelve Child
+ Theme URI:    http://example.com/twenty-twelve-child/
+ Description:  LowerMedia Custom Twenty Twelve Child Theme
  Author:       John Doe
  Author URI:   http://example.com
- Template:     twentyfourteen
+ Template:     twentytwelve
  Version:      1.0.0
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
- Text Domain:  twenty-fourteen-child
+ Text Domain:  twenty-twelve-child
 */
 
-@import url("../twentyfourteen/style.css");
+@import url("../twentytwelve/style.css");
 
 /* =Theme customization starts here
 -------------------------------------------------------------- */
 
-body {}
+
+/*----------H#----------*/
+
+  h1, h2, h3, h4, h5, h6 {
+
+  }
+
+  a {}
+  p {}
+ 
+
+/*----------HTML/BODY/SITE----------*/
+
+  html,body {
+      width: 100%;
+      height: auto;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden; 
+      overflow-y: auto; 
+  }
+
+  body {background:black;}
+
+
+  .site {margin: 0 auto;}
+
+
+/*----------HEADER----------*/
+
+/*----------NAVIGATION----------*/
+
+/*----------CONTENT----------*/
+
+/*----------FOOTER----------*/
+
+
+/*----------MEDIA QUERIES----------*/
+
+
+@media all and  (max-width: 1024px) and (min-width: 300px) {
+
+}

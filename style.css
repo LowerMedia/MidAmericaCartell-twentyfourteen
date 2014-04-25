@@ -15,6 +15,20 @@
 /* =Theme customization starts here
 -------------------------------------------------------------- */
 
+/*
+COLOR SCHEME
+WHITE
+BLACK
+GREY #77777A
+GREEN #6DBE4A
+*/
+
+.green {color:#6DBE4A;}
+.grey {color:#77777A;}
+.greenbk {background:#6DBE4A;}
+.greybk {background:#77777A;}
+.white {color:#FFF;}
+.whitebk {background:#FFF;}
 
 /*----------H#----------*/
 
@@ -25,6 +39,7 @@
   a {}
   p {}
  
+ .site-title, .site-description {display:none;}
 
 /*----------HTML/BODY/SITE----------*/
 
@@ -37,15 +52,41 @@
       overflow-y: auto; 
   }
 
-  body {background:black;}
-
-
-  .site {margin: 0 auto;}
+  body .site {margin: 0 auto;}
 
 
 /*----------HEADER----------*/
 
+  /*REMOVE HEADER IMG STYLINGS*/
+  img.header-image {
+      border-radius: 0;
+      box-shadow: none;
+      margin:0;
+      float:left;
+    }
+
+  .site-header .header-hgroup {
+      float:left;
+      width:30%;
+    }
+
+  .site-slogan {
+        text-align: left;
+        width: 40%;
+        margin-top: 60px;
+        margin-left: 30px;
+    }
+  .site-slogan .spanrow {display:block;width:100%;text-transform: uppercase;}
+  .site-slogan .first-row {font-weight: 100;}
+  .site-slogan .second-row {}
+  .site-slogan .third-row {}
+
 /*----------NAVIGATION----------*/
+
+
+  .main-navigation {float:left;width:100%;}
+  .main-navigation .menu-slogan {text-align:right;}
+  .main-navigation li a {color:white;}
 
 /*----------CONTENT----------*/
 

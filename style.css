@@ -78,8 +78,8 @@ GREEN #6DBE4A
 
   .site-slogan {
         text-align: left;
-        margin-top: 60px;
-        margin-left: 30px;
+        margin-top: 4.6rem;
+        margin-left: 1rem;
     }
   .site-slogan .spanrow {display:block;width:100%;text-transform: uppercase;font-size: 120%;}
   .site-slogan .first-row {font-weight: 100;}
@@ -89,11 +89,14 @@ GREEN #6DBE4A
 /*----------NAVIGATION----------*/
 
 
-  .main-navigation {float:left;width:59%;}
-  .main-navigation .menu-slogan {text-align:right;}
+  .main-navigation {float:left;width:59%;margin-top: 3.5rem;}
+  .main-navigation .menu-slogan {text-align:right;font-size:120%;}
+  .main-navigation li {padding: .5rem 0;margin: 0 1.5rem 0 0;font-size: 120%;}
   .main-navigation li a {color:white;font-weight:900;}
 
-  .nav-menu li:first-of-type {padding-left: 40px;}
+  .nav-menu li:first-of-type {padding-left: 1.5rem;}
+
+
 
 /*----------CONTENT----------*/
 

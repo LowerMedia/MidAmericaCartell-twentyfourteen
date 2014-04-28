@@ -89,18 +89,33 @@ GREEN #6DBE4A
 /*----------NAVIGATION----------*/
 
 
-  .main-navigation {float:left;width:59%;margin-top: -0.5rem;}
+  .main-navigation {
+      float:left;
+      width:59%;
+      margin-top: -0.5rem;
+    }
+
   .main-navigation .menu-slogan {
       text-align: right;
       font-size: 120%;
       border-bottom: 2px solid #77777A;
       margin-bottom: 55px;
       text-transform: uppercase;
+      font-weight:500;
     }
-  .main-navigation li {padding: .5rem 0;margin: 0 1.5rem 0 0;font-size: 120%;}
-  .main-navigation li a {color:white;font-weight:900;}
 
-  .nav-menu li:first-of-type {padding-left: 1.5rem;}
+  .main-navigation li {
+      padding: .5rem 0;
+      margin: 0 1.5rem 0 0;
+      font-size: 120%;
+    }
+
+  .main-navigation li a {
+      color:white;
+      font-weight:400;
+    }
+
+  .nav-menu li:first-of-type {padding-left: 2.5rem;}
 
 
 
@@ -117,19 +132,30 @@ GREEN #6DBE4A
       width: 49%;
       text-align: center;
     }
-    .home .post-order-1, .home .post-order-2 {margin-bottom: -35px;}
-    .home .post-order-1, .home .post-order-3 {margin-right: 17px;}
-    .home .post-order-2, .home .post-order-4 {}
+    .home .recent-post h1 {
+    font-weight:900;
+      font-size:230%;
+    }
+    .home .post-order-1, 
+    .home .post-order-2 {margin-bottom: -85px;}
+
+    .home .post-order-1, 
+    .home .post-order-3 {margin-right: 17px;}
+
+    .home .post-order-2, 
+    .home .post-order-4 {}
 
   .home .recent-post .entry-header {
-      top: -70px;
+      top: -140px;
       position: relative;
     }
+
   .home .recent-post .wp-post-image {
     height:100%;
     width:auto;
     max-width:none;
   }
+
   .home-section-one {width:100%;display:block;}
   .home-section-two,  .home-section-three {width: 49%;float: left;}
 

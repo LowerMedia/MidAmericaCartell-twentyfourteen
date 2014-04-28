@@ -21,15 +21,54 @@ get_header(); ?>
 
 			<?php if ( have_posts() ) : ?>
 
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
-					<article id="post-<?php the_ID() ?>" class="post no-results not-found post-<?php the_ID() ?>">
-					<?php //get_template_part( 'content', get_post_format() ); 
-						the_title();
-						the_permalink();
-						the_post_thumbnail( $size = 'post-thumbnail', $attr = '' );
-					?>
-				</article>
+				<?php 
+				/* Start the Loop */ 
+				$countDracula=0;
+				while ( have_posts() ) : the_post(); 
+				?>
+					<?php 
+						$countDracula++;
+						if ($countDracula == 1 || $countDracula == 2 || $countDracula == 3 || $countDracula == 4) :
+					 ?>
+							<?php if ($countDracula == 1 ) : ?>
+								<section id='home-section-one' class='home-section-one home-section'>
+							<?php endif; ?>
+								<a href='<?php the_permalink(); ?>' title='<?php the_title(); ?>' alt='<?php the_title(); ?>'>
+									<article id="post-<?php the_ID() ?>" class="post recent-post post-<?php the_ID() ?> post-order-<?php echo $countDracula; ?>">
+										<?php
+											the_post_thumbnail( $size = 'post-thumbnail', $attr = '' );
+										?>
+										<header class="entry-header">
+											<h1 class="entry-title"><?php the_title(); ?></h1>
+										</header>
+									</article>
+								</a>
+							<?php if ($countDracula == 4 ) : ?>
+								</section>
+							<?php endif; ?>
+						<?php else : ?>
+							<?php if ($countDracula == 5 ) : ?>
+								<section id='home-section-two' class='home-section-two home-section'>
+							<?php endif; ?>
+								<a href='<?php the_permalink(); ?>' title='<?php the_title(); ?>' alt='<?php the_title(); ?>'>
+									<article id="post-<?php the_ID() ?>" class="post post-<?php the_ID() ?> post-order-<?php echo $countDracula; ?>">
+										<?php
+											the_post_thumbnail( $size = 'post-thumbnail', $attr = '' );
+										?>
+										<header class="entry-header">
+											<h1 class="entry-title"><?php the_title(); ?></h1>
+										</header>
+										<?php
+											the_excerpt()
+										?>
+									</article>
+								</a>
+							<?php //sizeof($posts) is equal to the amount of posts in the blogroll
+								if ($countDracula == sizeof($posts) ) : ?>
+								</section>
+							<?php endif; ?>
+
+					<?php endif; ?>
 				<?php endwhile; ?>
 
 				<?php twentytwelve_content_nav( 'nav-below' ); ?>
@@ -66,8 +105,11 @@ get_header(); ?>
 
 			<?php endif; // end have_posts() check ?>
 
+		<section id='home-section-three' class='home-section-three home-section'>
+		<?php get_sidebar(); ?>
+		</section>
+
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

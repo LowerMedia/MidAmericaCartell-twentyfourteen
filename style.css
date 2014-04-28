@@ -89,8 +89,14 @@ GREEN #6DBE4A
 /*----------NAVIGATION----------*/
 
 
-  .main-navigation {float:left;width:59%;margin-top: 3.5rem;}
-  .main-navigation .menu-slogan {text-align:right;font-size:120%;}
+  .main-navigation {float:left;width:59%;margin-top: -0.5rem;}
+  .main-navigation .menu-slogan {
+      text-align: right;
+      font-size: 120%;
+      border-bottom: 2px solid #77777A;
+      margin-bottom: 55px;
+      text-transform: uppercase;
+    }
   .main-navigation li {padding: .5rem 0;margin: 0 1.5rem 0 0;font-size: 120%;}
   .main-navigation li a {color:white;font-weight:900;}
 

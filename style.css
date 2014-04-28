@@ -73,12 +73,11 @@ GREEN #6DBE4A
 
   .site-header .header-hgroup {
       float:left;
-      width:30%;
+      width:20%;
     }
 
   .site-slogan {
         text-align: left;
-        width: 40%;
         margin-top: 60px;
         margin-left: 30px;
     }
@@ -90,7 +89,7 @@ GREEN #6DBE4A
 /*----------NAVIGATION----------*/
 
 
-  .main-navigation {float:left;width:100%;}
+  .main-navigation {float:left;width:59%;}
   .main-navigation .menu-slogan {text-align:right;}
   .main-navigation li a {color:white;}
 

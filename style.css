@@ -117,7 +117,38 @@ GREEN #6DBE4A
 
   .nav-menu li:first-of-type {padding-left: 2.5rem;}
 
+/*----------SOCIAL MEDIA MENU----------*/
 
+	.social-icons-list li {
+			background-image: url('http://midamericacartell.com/wp-content/blog.dir/sites/37/2014/05/Screenshot-2014-05-01-10.57.05.png');
+			height: 90px;
+			width: 100px;
+			float: left;
+			margin:0 13px;
+		}
+		
+	.social-icons-list .twitter {
+			background-position:-100px 0px;
+		}
+			
+	.social-icons-list .youtube {
+			background-position:-200px 0px;
+		}
+			
+	.social-icons-list .instagram {
+			background-position:-300px 0px;
+		}
+	
+	.social-icons-list li a {
+			line-height: 0; 
+		    font-size: 0;
+		    color: transparent; 
+		    text-decoration: none;
+		}
+		
+	.SocialMediaIcons {margin-top: -50px;}
+	
+	.widget-area .social-icons {width: 115%;}
 
 /*----------CONTENT----------*/
 
@@ -129,13 +160,16 @@ GREEN #6DBE4A
     }
 
     .home .recent-post {
-      width: 49%;
-      text-align: center;
-    }
+	      width: 49%;
+	      text-align: center;
+	    }
+
     .home .recent-post h1 {
-    font-weight:900;
-      font-size:230%;
-    }
+			font-weight:900;
+			font-size:230%;
+			color: #FFF;
+			text-shadow: 1px 1px 1px #000;
+	    }
     .home .post-order-1, 
     .home .post-order-2 {margin-bottom: -85px;}
 
@@ -156,13 +190,15 @@ GREEN #6DBE4A
     max-width:none;
   }
 
-  .home-section-one {width:100%;display:block;}
-  .home-section-two,  .home-section-three {width: 49%;float: left;}
+  .home-section-one {width:100%;display:block;height: 850px;}
+  .home-section-two {width: 49%;}
+  .home-section-three {width: 51%;}
+  .home-section-two,  .home-section-three {float: left;margin-top:-45px;}
 
   .home .widget-area {
-    float: left; 
-    width: 96%;
-    margin-left: 4%;
+	    float: left; 
+	    width: 96%;
+	    margin: 0;
     }
 /*----------FOOTER----------*/
 

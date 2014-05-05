@@ -49,7 +49,7 @@ GREEN #6DBE4A
       overflow-y: auto; 
   }
 
-  body .site {padding:0 10px;margin: 0 auto;}
+  body .site {padding:0 20px;margin: 0 auto;}
 
   body .site-content {width:100%;}
 /*----------HEADER----------*/

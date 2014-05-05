@@ -12,7 +12,7 @@
 	</div><!-- #main .wrapper -->
 </div><!-- #page -->
 
-<footer id="colophon" role="contentinfo">
+<footer id="colophon" role="contentinfo" class="colophon">
 	<div class='site-copy'>
 		&copy; <?php echo date("Y") ?> MidAmericaCartell
 	</div>

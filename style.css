@@ -149,60 +149,66 @@ GREEN #6DBE4A
 
 /*----------CONTENT----------*/
 
-  .home .post {
-      float: left;
-      border: none;
-      padding-bottom: 0;
-      overflow: hidden;
+  /*--HOME--*/
+
+    .home .post {
+        float: left;
+        border: none;
+        padding-bottom: 0;
+        overflow: hidden;
+      }
+
+      .home .recent-post {
+  	      width: 49%;
+  	      text-align: center;
+  	    }
+
+      .home .recent-post h1 {
+    			font-weight:900;
+    			font-size:230%;
+    			color: #FFF;
+    			text-shadow: 1px 1px 1px #000;
+  	    }
+        
+      .home .post-order-1, 
+      .home .post-order-2 {margin-bottom: -85px;}
+
+      .home .post-order-1, 
+      .home .post-order-3 {margin-right: 17px;}
+
+      .home .post-order-2, 
+      .home .post-order-4 {}
+
+    .home .recent-post .entry-header {
+        top: -140px;
+        position: relative;
+      }
+
+    .home .recent-post .wp-post-image {
+      height:100%;
+      width:auto;
+      max-width:none;
     }
 
-    .home .recent-post {
-	      width: 49%;
-	      text-align: center;
-	    }
+    .home-section-one {width:100%;display:block;height: 850px;}
+    .home-section-two {width: 49%;}
+    .home-section-three {width: 51%;}
+    .home-section-two,  .home-section-three {float: left;margin-top:-45px;}
 
-    .home .recent-post h1 {
-  			font-weight:900;
-  			font-size:230%;
-  			color: #FFF;
-  			text-shadow: 1px 1px 1px #000;
-	    }
-      
-    .home .post-order-1, 
-    .home .post-order-2 {margin-bottom: -85px;}
+    .home .widget-area {
+  	    float: left; 
+  	    width: 96%;
+  	    margin: 0;
+      }
 
-    .home .post-order-1, 
-    .home .post-order-3 {margin-right: 17px;}
+  /*--SINGLE BLOG ARITCLE--*/
 
-    .home .post-order-2, 
-    .home .post-order-4 {}
-
-  .home .recent-post .entry-header {
-      top: -140px;
-      position: relative;
-    }
-
-  .home .recent-post .wp-post-image {
-    height:100%;
-    width:auto;
-    max-width:none;
-  }
-
-  .home-section-one {width:100%;display:block;height: 850px;}
-  .home-section-two {width: 49%;}
-  .home-section-three {width: 51%;}
-  .home-section-two,  .home-section-three {float: left;margin-top:-45px;}
-
-  .home .widget-area {
-	    float: left; 
-	    width: 96%;
-	    margin: 0;
-    }
+    .site-content article {width: 50%;text-align: justify;float:left;}
+    .single .widget-area {float: left;width: 50%;}
 /*----------FOOTER----------*/
 
   footer[role="contentinfo"] {border:none;margin-top: 0;margin-bottom: 80px;}
   .colophon {text-align: center;}
-  .site-copy {}
   .site-info .white {color:white;text-decoration:none;}
 
 /*----------MEDIA QUERIES----------*/

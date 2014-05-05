@@ -9,7 +9,7 @@
  * @since Twenty Twelve 1.0
  */
 ?>
-
+	<?php the_post_thumbnail('full'); ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class('single-post'); ?>>
 		<?php if ( is_sticky() && is_home() && ! is_paged() ) : ?>
 		<div class="featured-post">
@@ -17,7 +17,7 @@
 		</div>
 		<?php endif; ?>
 		<header class="entry-header">
-			<?php the_post_thumbnail('full'); ?>
+			
 			<?php if ( is_single() ) : ?>
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 			<?php else : ?>

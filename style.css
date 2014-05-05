@@ -32,10 +32,7 @@ GREEN #6DBE4A
 
 /*----------H#----------*/
 
-  h1, h2, h3, h4, h5, h6 {
-
-  }
-
+  h1, h2, h3, h4, h5, h6 {}
   a {}
   p {}
  
@@ -165,11 +162,12 @@ GREEN #6DBE4A
 	    }
 
     .home .recent-post h1 {
-			font-weight:900;
-			font-size:230%;
-			color: #FFF;
-			text-shadow: 1px 1px 1px #000;
+  			font-weight:900;
+  			font-size:230%;
+  			color: #FFF;
+  			text-shadow: 1px 1px 1px #000;
 	    }
+      
     .home .post-order-1, 
     .home .post-order-2 {margin-bottom: -85px;}
 
@@ -202,6 +200,10 @@ GREEN #6DBE4A
     }
 /*----------FOOTER----------*/
 
+  footer[role="contentinfo"] {border:none;margin-top: 0;margin-bottom: 80px;}
+  .colophon {text-align: center;}
+  .site-copy {}
+  .site-info .white {color:white;text-decoration:none;}
 
 /*----------MEDIA QUERIES----------*/
 

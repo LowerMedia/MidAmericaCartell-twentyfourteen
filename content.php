@@ -9,28 +9,43 @@
  * @since Twenty Twelve 1.0
  */
 ?>
-	<?php the_post_thumbnail('full'); ?>
+    <?php
+      the_post_thumbnail('full');
+      if ( is_single() ) : ?>
+        <header class="entry-header">
+          <h1 class="entry-title"><?php the_title(); ?></h1>
+          <div class='single-entry-meta'>
+            <span class='entry-meta-item meta-author'>By <?php the_author();?></span><span class='entry-meta-item meta-date'><?php the_time('jS F Y'); ?></span><span class='entry-meta-item meta-tags'> <?php the_tags(); ?></span>
+          </div>
+        </header><!-- .entry-header -->
+    <?php 
+      endif; 
+    ?>
+
 	<article id="post-<?php the_ID(); ?>" <?php post_class('single-post'); ?>>
-		<?php if ( is_sticky() && is_home() && ! is_paged() ) : ?>
+
+    <?php if ( is_sticky() && is_home() && ! is_paged() ) : ?>
 		<div class="featured-post">
 			<?php _e( 'Featured post', 'twentytwelve' ); ?>
 		</div>
-		<?php endif; ?>
-		<header class="entry-header">
-			
-			<?php if ( is_single() ) : ?>
-			<h1 class="entry-title"><?php the_title(); ?></h1>
-			<?php else : ?>
-			<h1 class="entry-title">
-				<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
-			</h1>
-			<?php endif; // is_single() ?>
-			<?php if ( comments_open() ) : ?>
-				<div class="comments-link">
-					<?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a reply', 'twentytwelve' ) . '</span>', __( '1 Reply', 'twentytwelve' ), __( '% Replies', 'twentytwelve' ) ); ?>
-				</div><!-- .comments-link -->
-			<?php endif; // comments_open() ?>
-		</header><!-- .entry-header -->
+		<?php 
+    endif; 
+    if ( !is_single() ) : ?>
+    		<header class="entry-header">
+    			<?php if ( is_single() ) : ?>
+    			<h1 class="entry-title"><?php the_title(); ?></h1>
+    			<?php else : ?>
+    			<h1 class="entry-title">
+    				<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
+    			</h1>
+    			<?php endif; // is_single() ?>
+    			<?php if ( comments_open() ) : ?>
+    				<div class="comments-link">
+    					<?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a reply', 'twentytwelve' ) . '</span>', __( '1 Reply', 'twentytwelve' ), __( '% Replies', 'twentytwelve' ) ); ?>
+    				</div><!-- .comments-link -->
+    			<?php endif; // comments_open() ?>
+    		</header><!-- .entry-header -->
+      <?php endif; ?>
 
 		<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 		<div class="entry-summary">

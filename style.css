@@ -35,7 +35,7 @@ GREEN #6DBE4A
   h1, h2, h3, h4, h5, h6 {}
   a {}
   p {}
- 
+
  .site-title, .site-description {display:none;}
 
 /*----------HTML/BODY/SITE----------*/
@@ -45,8 +45,8 @@ GREEN #6DBE4A
       height: auto;
       margin: 0px;
       padding: 0px;
-      overflow-x: hidden; 
-      overflow-y: auto; 
+      overflow-x: hidden;
+      overflow-y: auto;
   }
 
   body .site {padding:0 20px;margin: 0 auto;}
@@ -123,28 +123,28 @@ GREEN #6DBE4A
 			float: left;
 			margin:0 13px;
 		}
-		
+
 	.social-icons-list .twitter {
 			background-position:-100px 0px;
 		}
-			
+
 	.social-icons-list .youtube {
 			background-position:-200px 0px;
 		}
-			
+
 	.social-icons-list .instagram {
 			background-position:-300px 0px;
 		}
-	
+
 	.social-icons-list li a {
-			line-height: 0; 
+			line-height: 0;
 		    font-size: 0;
-		    color: transparent; 
+		    color: transparent;
 		    text-decoration: none;
 		}
-		
+
 	.SocialMediaIcons {margin-top: -50px;}
-	
+
 	.widget-area .social-icons {width: 115%;}
 
 /*----------CONTENT----------*/
@@ -163,20 +163,21 @@ GREEN #6DBE4A
   	      text-align: center;
   	    }
 
-      .home .recent-post h1 {
+      .home .recent-post .entry-title,
+      .single .entry-title {
     			font-weight:900;
     			font-size:230%;
     			color: #FFF;
     			text-shadow: 1px 1px 1px #000;
   	    }
-        
-      .home .post-order-1, 
+
+      .home .post-order-1,
       .home .post-order-2 {margin-bottom: -85px;}
 
-      .home .post-order-1, 
+      .home .post-order-1,
       .home .post-order-3 {margin-right: 17px;}
 
-      .home .post-order-2, 
+      .home .post-order-2,
       .home .post-order-4 {}
 
     .home .recent-post .entry-header {
@@ -196,14 +197,14 @@ GREEN #6DBE4A
     .home-section-two,  .home-section-three {float: left;margin-top:-45px;}
 
     .home .widget-area {
-  	    float: left; 
+  	    float: left;
   	    width: 96%;
   	    margin: 0;
       }
 
   /*--SINGLE BLOG ARITCLE--*/
 
-    .site-content article {width: 50%;text-align: justify;float:left;}
+    .single .site-content article {width: 50%;text-align: justify;float:left;}
     .single .widget-area {float: left;width: 50%;}
 /*----------FOOTER----------*/
 

@@ -36,6 +36,24 @@ GREEN #6DBE4A
   a {}
   p {}
 
+  .single-post .entry-title,
+  .single-post .single-entry-meta {
+      position: relative;
+      vertical-align: baseline;
+      top: -100px;
+      left: 20px;
+      margin-bottom:10px;
+    }
+
+
+  .home .recent-post .entry-title,
+  .single .entry-title {
+      font-weight:900;
+      font-size:230%;
+      color: #FFF;
+      text-shadow: 1px 1px 1px #000;
+    }
+
  .site-title, .site-description {display:none;}
 
 /*----------HTML/BODY/SITE----------*/
@@ -163,14 +181,6 @@ GREEN #6DBE4A
   	      text-align: center;
   	    }
 
-      .home .recent-post .entry-title,
-      .single .entry-title {
-    			font-weight:900;
-    			font-size:230%;
-    			color: #FFF;
-    			text-shadow: 1px 1px 1px #000;
-  	    }
-
       .home .post-order-1,
       .home .post-order-2 {margin-bottom: -85px;}
 
@@ -206,6 +216,12 @@ GREEN #6DBE4A
 
     .single .site-content article {width: 50%;text-align: justify;float:left;}
     .single .widget-area {float: left;width: 50%;}
+
+    .single-post .entry-meta-item {
+        color: white;
+        margin-right: 50px;
+      }
+    .single-post .entry-meta-item a {color:white;}
 /*----------FOOTER----------*/
 
   footer[role="contentinfo"] {border:none;margin-top: 0;margin-bottom: 80px;}
@@ -217,4 +233,15 @@ GREEN #6DBE4A
 
 @media all and  (max-width: 1024px) and (min-width: 300px) {
 
+}
+
+@media all and  (max-width: 992px) and (min-width: 300px) {
+  .main-navigation {margin-top:30px;width:100%;}
+  .home .recent-post {width: 48%;}
+}
+
+@media all and  (max-width: 665px) and (min-width: 300px) {
+  .site-header .header-hgroup {width:40%;}
+  .home .recent-post, .home-section-two {width: 100%;}
+  .home-section-three {width: 20%;margin-left: 35%;margin-bottom: 50px;}
 }

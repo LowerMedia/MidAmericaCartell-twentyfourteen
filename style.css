@@ -136,23 +136,51 @@ GREEN #6DBE4A
 
 	.social-icons-list li {
 			background-image: url('http://midamericacartell.com/wp-content/blog.dir/sites/37/2014/05/Screenshot-2014-05-01-10.57.05.png');
-			height: 90px;
-			width: 100px;
-			float: left;
-			margin:0 13px;
+			height: 120px;
+      width: 120px;
+      float: left;
+      margin: 0 2px;
 		}
 
-	.social-icons-list .twitter {
-			background-position:-100px 0px;
-		}
+  .social-icons-list .facebook {
+      background-position:-130px -10px;
+      background-image: url('http://midamericacartell.com/wp-content/blog.dir/sites/37/2014/05/facebook_cg9-Copy.png');
+    }
+
+  .social-icons-list .facebook:hover {
+      background-position:-130px -10px;
+      background-image: url('http://midamericacartell.com/wp-content/blog.dir/sites/37/2014/05/facebook_p360-Copy.png');
+    }
+
+  .social-icons-list .twitter {
+      background-position:-130px -10px;
+      background-image: url('http://midamericacartell.com/wp-content/blog.dir/sites/37/2014/05/twitter_cg9-Copy.png');
+    }
+
+  .social-icons-list .twitter:hover {
+      background-position:-130px -10px;
+      background-image: url('http://midamericacartell.com/wp-content/blog.dir/sites/37/2014/05/twitter_p360-Copy.png');
+    }
 
 	.social-icons-list .youtube {
-			background-position:-200px 0px;
+			background-position:-130px -10px;
+      background-image: url('http://midamericacartell.com/wp-content/blog.dir/sites/37/2014/05/youtube_cg9-Copy.png');
 		}
 
+  .social-icons-list .youtube:hover {
+      background-position:-130px -10px;
+      background-image: url('http://midamericacartell.com/wp-content/blog.dir/sites/37/2014/05/youtube_p360-Copy.png');
+    }
+
 	.social-icons-list .instagram {
-			background-position:-300px 0px;
+			background-position:-260px -10px;
+      background-image: url('http://midamericacartell.com/wp-content/blog.dir/sites/37/2014/05/instagram_cg9-Copy.png');
 		}
+
+  .social-icons-list .instagram:hover {
+      background-position:-260px -10px;
+      background-image: url('http://midamericacartell.com/wp-content/blog.dir/sites/37/2014/05/instagram_p360-Copy.png');
+    }
 
 	.social-icons-list li a {
 			line-height: 0;

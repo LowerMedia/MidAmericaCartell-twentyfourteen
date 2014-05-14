@@ -53,7 +53,7 @@
 		</hgroup>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<h3 class='green whitebk menu-slogan'>we want to tell your story</h3>
+			<h3 class='green whitebk menu-slogan'><a href='/contact'>we want to tell your story</a></h3>
 			<h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
 			<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu greybk' ) ); ?>

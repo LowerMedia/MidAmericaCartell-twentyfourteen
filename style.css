@@ -109,6 +109,11 @@ GREEN #6DBE4A
   .site-slogan .second-row {}
   .site-slogan .third-row {}
 
+  .main-navigation a {
+      color: #6dbe4a;
+      text-decoration: none;
+    }
+
 /*----------NAVIGATION----------*/
 
 

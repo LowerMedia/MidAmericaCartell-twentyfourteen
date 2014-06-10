@@ -33,57 +33,74 @@ GREEN #6DBE4A
 /*----------H#----------*/
 
   h1, h2, h3, h4, h5, h6 {}
-  a {}
-  p {}
+
+  a, a:hover {
+      color: #6DBE4A;
+    }
+
+  p {
+      color: #77777A;
+      line-height: 1.2rem;
+    }
+
+  .green p {
+      color: #6DBE4A;
+    }
 
   .single-post .entry-title,
   .single-post .single-entry-meta {
       position: relative;
       vertical-align: baseline;
-      top: -100px;
+      top: -60px;
       left: 20px;
-      /*
-margin-bottom:10px;
-      padding-bottom: 50px;
-*/
     }
 
+  .single-entry-meta {
+      margin-top:5px;
+    }
 
-  .home .recent-post .entry-title {
+  .home .recent-post .entry-title,
+  .category-car-tales .recent-post .entry-title {
       font-weight:900;
       font-size:230%;
       color: #FFF;
       text-shadow: 1px 1px 1px #000;
       height: 126px;
     }
-    
 
-/*
-  .single .entry-title {
-      font-weight:900;
-      font-size:230%;
-      color: #FFF;
-      text-shadow: 1px 1px 1px #000;
-      height: 126px;
+    .entry-header {
+        margin-bottom: 0;
+      }
+
+  .entry-header .entry-title {
+      font-variant: small-caps;
+      color: #6DBE4A;
+      font-weight: bold;
+      padding-top:10px;
     }
-*/
 
- .site-title, .site-description {display:none;}
+  .site-title, 
+  .site-description {display:none;}
 
 /*----------HTML/BODY/SITE----------*/
 
   html,body {
       width: 100%;
       height: auto;
-      margin: 0px;
-      padding: 0px;
+      margin: 0;
+      padding: 0;
       overflow-x: hidden;
       overflow-y: auto;
   }
 
-  body .site {padding:0 20px;margin: 0 auto;}
+  body .site {
+      padding:0 20px;
+      margin: 0 auto;
+      width:75rem;
+    }
 
   body .site-content {width:100%;}
+
 /*----------HEADER----------*/
 
   /*REMOVE HEADER,POST IMG STYLINGS*/
@@ -116,10 +133,15 @@ margin-bottom:10px;
         margin-top: 4.6rem;
         margin-left: 1rem;
     }
-  .site-slogan .spanrow {display:block;width:100%;text-transform: uppercase;font-size: 120%;}
+
+  .site-slogan .spanrow {
+      display:block;
+      width:100%;
+      text-transform: uppercase;
+      font-size: 120%;
+    }
+
   .site-slogan .first-row {font-weight: 100;}
-  .site-slogan .second-row {}
-  .site-slogan .third-row {}
 
   .main-navigation a {
       color: #6dbe4a;
@@ -155,19 +177,41 @@ margin-bottom:10px;
       font-weight:400;
     }
 
+  .main-navigation .current-menu-item > a,
+  .main-navigation .current-menu-ancestor > a,
+  .main-navigation .current_page_item > a,
+  .main-navigation .current_page_ancestor > a {
+      color: #6DBE4A;
+    }
+
+  .main-navigation a:hover,
+  .main-navigation a:focus {
+      color: black;
+    }
+
   .nav-menu li:first-of-type {padding-left: 2.5rem;}
+
+  .nav-next, 
+  .next-image {
+      float: none;
+      width: 25%;
+    }
+
+  .nav-previous, .previous-image {
+      width: 25%;
+    }
 
 /*----------SOCIAL MEDIA MENU----------*/
 
 	.social-icons-list li {
 			background-image: url('http://midamericacartell.com/wp-content/blog.dir/sites/37/2014/05/Screenshot-2014-05-01-10.57.05.png');
-			height: 120px;
-      width: 120px;
+			height: 64px;
+      width: 64px;
       float: left;
       margin: 0 2px;
 		}
 
-  .social-icons-list .facebook {
+  /*.social-icons-list .facebook {
       background-position:-130px -10px;
       background-image: url('http://midamericacartell.com/wp-content/blog.dir/sites/37/2014/05/facebook_cg9-Copy.png');
     }
@@ -175,6 +219,16 @@ margin-bottom:10px;
   .social-icons-list .facebook:hover {
       background-position:-130px -10px;
       background-image: url('http://midamericacartell.com/wp-content/blog.dir/sites/37/2014/05/facebook_p360-Copy.png');
+    }*/
+
+  .social-icons-list .facebook {
+      background-image: url("http://midamericacartell.com/wp-content/blog.dir/sites/37/2014/05/facebook_cg9_64.png");
+      background-position: 0 0;
+    }
+
+  .social-icons-list .facebook:hover {
+      background-image: url("http://midamericacartell.com/wp-content/blog.dir/sites/37/2014/05/facebook_p360_64.png");
+      background-position: 0 0;
     }
 
   .social-icons-list .twitter {
@@ -222,54 +276,85 @@ margin-bottom:10px;
 
   /*--HOME--*/
 
-    .home .post {
+    .home .post,
+    .category-car-tales .post {
         float: left;
         border: none;
         padding-bottom: 0;
         overflow: hidden;
       }
 
-      .home .recent-post {
-  	      width: 49%;
-  	      text-align: center;
-  	    }
+    .home .recent-post,
+    .category-car-tales .recent-post {
+	      width: 49%;
+	      text-align: center;
+	    }
 
-      .home .post-order-1,
-      .home .post-order-2 {margin-bottom: -170px;}
+    .home .post-order-1,
+    .home .post-order-2,
+    .category-car-tales .post-order-1,
+    .category-car-tales .post-order-2  {margin-bottom: -178px;}
 
-      .home .post-order-1,
-      .home .post-order-3 {margin-right: 17px;}
+    .home .post-order-1,
+    .home .post-order-3,
+    .category-car-tales .post-order-1,
+    .category-car-tales .post-order-3 {margin-right: 17px;}
 
-      .home .post-order-2,
-      .home .post-order-4 {}
+    .home .post-order-3,
+    .home .post-order-4,
+    .category-car-tales .post-order-3,
+    .category-car-tales .post-order-4 {
+        margin-bottom: -125px;
+      }
 
-    .home .recent-post .entry-header {
+    .home-section-two,
+    .home-section-three,
+    .cartales-section-two,
+    .cartales-section-three {
+        float:none;
+        margin-top: -500px;
+        width:100%;
+      }
+
+    .home-section-three,
+    .cartales-section-three {
+        display:none;
+      }
+
+    .home .recent-post .entry-header ,
+    .category-car-tales .recent-post .entry-header {
         top: -126px;
         position: relative;
         margin-bottom: 60px;
       }
 
-    .home .recent-post .wp-post-image {
-      height:100%;
-      width:auto;
-      max-width:none;
-    }
+    .home .recent-post .wp-post-image,
+    .category-car-tales .recent-post .wp-post-image {
+        height:100%;
+        width:auto;
+        max-width:none;
+      }
 
-    .home-section-one {width:100%;display:block;height: 850px;}
-    .home-section-two {width: 49%;}
-    .home-section-three {width: 51%;}
-    .home-section-two,  .home-section-three {float: left;margin-top:-240px;}
+    .home-section-one,
+    .cartales-section-one {
+        width:100%;
+        display:block;
+        height: 850px;
+      }
 
-    .home-section-one .entry-header:hover {
+    .home-section-one .entry-header:hover,
+    .cartales-section-one .entry-header:hover {
         background: #6DBE4A;
         opacity: .6;
       }
 
-    .home-section-two img {
+    .home-section-two img,
+    .cartales-section-two img {
           width: 100%;
       }
 
-    .home .widget-area {
+    .home .widget-area,
+    .category-car-tales .widget-area {
   	    float: left;
   	    width: 96%;
   	    margin: 0;
@@ -277,7 +362,6 @@ margin-bottom:10px;
 
   /*--SINGLE BLOG ARITCLE--*/
 
-    .single .site-content article {width: 50%;text-align: justify;float:left;}
     .single .widget-area {float: left;width: 50%;}
 
     .single-post .entry-meta-item {
@@ -285,19 +369,34 @@ margin-bottom:10px;
         margin-right: 50px;
       }
     .single-post .entry-meta-item a {color:white;}
+
+    .single .site-content article {
+        text-align: justify;
+        float: none;
+        width:100%;
+      }
     
+    .single-post .entry-header .entry-title {color:white;}
+
 /*----------FOOTER----------*/
 
-  footer[role="contentinfo"] {border:none;margin-top: 0;margin-bottom: 80px;}
-  .colophon {text-align: center;}
-  .site-info .white {color:white;text-decoration:none;}
+    footer[role="contentinfo"] {
+        border:none;
+        margin-top: 0;
+        margin-bottom: 80px;
+      }
+
+    .colophon {text-align: center;}
+
+    .site-info .white {
+        color:white;
+        text-decoration:none;
+      }
 
 /*----------MEDIA QUERIES----------*/
 
 
-@media all and  (max-width: 1024px) and (min-width: 300px) {
-
-}
+/*@media all and  (max-width: 1024px) and (min-width: 300px) {}*/
 
 @media all and  (max-width: 992px) and (min-width: 300px) {
   .main-navigation {margin-top:30px;width:100%;}

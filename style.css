@@ -42,12 +42,23 @@ GREEN #6DBE4A
       vertical-align: baseline;
       top: -100px;
       left: 20px;
-      margin-bottom:10px;
+      /*
+margin-bottom:10px;
       padding-bottom: 50px;
+*/
     }
 
 
-  .home .recent-post .entry-title,
+  .home .recent-post .entry-title {
+      font-weight:900;
+      font-size:230%;
+      color: #FFF;
+      text-shadow: 1px 1px 1px #000;
+      height: 126px;
+    }
+    
+
+/*
   .single .entry-title {
       font-weight:900;
       font-size:230%;
@@ -55,6 +66,7 @@ GREEN #6DBE4A
       text-shadow: 1px 1px 1px #000;
       height: 126px;
     }
+*/
 
  .site-title, .site-description {display:none;}
 
@@ -250,7 +262,7 @@ GREEN #6DBE4A
 
     .home-section-one .entry-header:hover {
         background: #6DBE4A;
-        opacity: .4;
+        opacity: .6;
       }
 
     .home-section-two img {
@@ -273,6 +285,7 @@ GREEN #6DBE4A
         margin-right: 50px;
       }
     .single-post .entry-meta-item a {color:white;}
+    
 /*----------FOOTER----------*/
 
   footer[role="contentinfo"] {border:none;margin-top: 0;margin-bottom: 80px;}

@@ -30,6 +30,12 @@ GREEN #6DBE4A
 .white {color:#FFF;}
 .whitebk {background:#FFF;}
 
+/*HIDE THE SCROLLBAR*/
+  ::-webkit-scrollbar { 
+        display: none; 
+    }
+
+
 /*----------H#----------*/
 
   h1, h2, h3, h4, h5, h6 {}
@@ -95,7 +101,7 @@ GREEN #6DBE4A
 
   body .site {
       padding:0 5px;
-      margin: 0 auto;
+      margin: 5px auto;
       /*width:75rem;*/
       width:100%;
       max-width:1200px;
@@ -298,11 +304,19 @@ GREEN #6DBE4A
         overflow: hidden;
       }
 
-    .home .recent-post,
+    /*.home .recent-post,
     .category-car-tales .recent-post {
 	      width: 49%;
 	      text-align: center;
-	    }
+	    }*/
+
+    .home .recent-post-a-wrap,
+    .category-car-tales .post-a-wrap {
+        width: 49%;
+        text-align: center;
+      }
+
+
 
     .home .post-order-1,
     .home .post-order-2,
@@ -378,6 +392,12 @@ GREEN #6DBE4A
     .home-section-two .post p {padding:0 10px;}
     .home-section-two .post p {padding:0 5px;margin-bottom:5px;}
 
+    .post-a-wrap {display:inline-block;}
+    .a-post-order-1 {}
+    .a-post-order-2 {float:right;}
+    .a-post-order-3 {}
+    .a-post-order-4 {float:right;}
+
   /*--SINGLE BLOG ARITCLE--*/
 
     .single .widget-area {float: left;width: 50%;}
@@ -418,11 +438,15 @@ GREEN #6DBE4A
 
 @media all and  (max-width: 992px) and (min-width: 300px) {
   .main-navigation {margin-top:30px;width:100%;}
-  .home .recent-post {width: 48%;}
+  .home .recent-post {width: 100%;}
 }
 
 @media all and  (max-width: 665px) and (min-width: 300px) {
   .site-header .header-hgroup {width:40%;}
   .home .recent-post, .home-section-two {width: 100%;}
   .home-section-three {width: 20%;margin-left: 35%;margin-bottom: 50px;}
+  .post-a-wrap {width:97.5%;margin:auto;}
+  .a-post-order-2 {float:left;}
+  .a-post-order-4 {float:left;}
+
 }

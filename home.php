@@ -33,7 +33,7 @@ get_header(); ?>
 							<?php if ($countDracula == 1 ) : ?>
 								<section id='home-section-one' class='home-section-one home-section'>
 							<?php endif; ?>
-								<a href='<?php the_permalink(); ?>' title='<?php the_title(); ?>' alt='<?php the_title(); ?>'>
+								<a class='post-a-wrap a-post-<?php the_ID() ?> a-post-order-<?php echo $countDracula; ?>' href='<?php the_permalink(); ?>' title='<?php the_title(); ?>' alt='<?php the_title(); ?>'>
 									<article id="post-<?php the_ID() ?>" class="post recent-post post-<?php the_ID() ?> post-order-<?php echo $countDracula; ?>">
 										<?php if ( has_post_thumbnail() ) {the_post_thumbnail('post-thumbnail');} else { ?>
 											<img width='470px' height='415px' src="<?php echo get_stylesheet_directory_uri(); ?>/no-img-1024x737.png" alt="<?php the_title(); ?>" />

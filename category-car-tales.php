@@ -32,7 +32,7 @@ get_header(); ?>
 							<?php if ($countDracula == 1 ) : ?>
 								<section id='cartales-section-one' class='cartales-section-one cartales-section'>
 							<?php endif; ?>
-								<a href='<?php the_permalink(); ?>' title='<?php the_title(); ?>' alt='<?php the_title(); ?>'>
+								<a class='post-a-wrap a-post-<?php the_ID() ?> a-post-order-<?php echo $countDracula; ?>' href='<?php the_permalink(); ?>' title='<?php the_title(); ?>' alt='<?php the_title(); ?>'>
 									<article id="post-<?php the_ID() ?>" class="post recent-post post-<?php the_ID() ?> post-order-<?php echo $countDracula; ?>">
 										<?php
 											the_post_thumbnail( $size = 'post-thumbnail', $attr = '' );

@@ -121,7 +121,6 @@ GREEN #6DBE4A
 
   .header-img-wrap {
       display: inline-block;
-      width: 20%;
       position: relative;
       max-width: 200px;
       float: left;
@@ -167,7 +166,7 @@ GREEN #6DBE4A
 
 
   .main-navigation {
-      float:left;
+      float:right;
       width:59%;
       margin-top: -0.5rem;
     }

@@ -107,7 +107,7 @@ GREEN #6DBE4A
       max-width:1200px;
     }
 
-  body .site-content {width:100%;}
+  body .site-content {width:100%;margin:0;}
 
 /*----------HEADER----------*/
 
@@ -122,7 +122,7 @@ GREEN #6DBE4A
     }
 
   .home-section-one img.wp-post-image {
-    margin-left:-35px;
+    margin-left:-25px;
   }
 
   .header-img-wrap {
@@ -141,7 +141,12 @@ GREEN #6DBE4A
       float: left;
       width: 100%;
       clear: both;
+      padding:0;
     }
+
+  .logged-in .site {
+    padding-top:1.714285714rem;
+  }
 
   .site-header .header-hgroup {
       float:left;
@@ -302,6 +307,7 @@ GREEN #6DBE4A
         border: none;
         padding-bottom: 0;
         overflow: hidden;
+        width:100%;
       }
 
     /*.home .recent-post,
@@ -312,9 +318,17 @@ GREEN #6DBE4A
 
     .home .recent-post-a-wrap,
     .category-car-tales .post-a-wrap {
-        width: 49%;
+        /*width: 49%;*/
         text-align: center;
       }
+
+    .post-a-wrap {
+        width: 49.8%;
+        text-align: center;
+      }
+
+    .cartales-section-one .post-a-wrap,
+    .home-section-one .post-a-wrap {height:400px;overflow:hidden;}
 
 
 
@@ -326,7 +340,7 @@ GREEN #6DBE4A
     .home .post-order-1,
     .home .post-order-3,
     .category-car-tales .post-order-1,
-    .category-car-tales .post-order-3 {margin-right: 17px;}
+    .category-car-tales .post-order-3 {/*margin-right: 17px;*/}
 
     .home .post-order-3,
     .home .post-order-4,
@@ -340,7 +354,7 @@ GREEN #6DBE4A
     .cartales-section-two,
     .cartales-section-three {
         float:none;
-        margin-top: -500px;
+        /*margin-top: -500px;*/
         width:100%;
       }
 
@@ -353,7 +367,7 @@ GREEN #6DBE4A
     .category-car-tales .recent-post .entry-header {
         top: -126px;
         position: relative;
-        margin-bottom: 60px;
+        margin-bottom: 45px;
       }
 
     .home .recent-post .wp-post-image,
@@ -367,7 +381,7 @@ GREEN #6DBE4A
     .cartales-section-one {
         width:100%;
         display:block;
-        height: 850px;
+        height: 805px;
       }
 
     .home-section-one .entry-header:hover,
@@ -387,15 +401,19 @@ GREEN #6DBE4A
   	    width: 96%;
   	    margin: 0;
       }
-
+    .cartales-section-two .post,
     .home-section-two .post {margin-bottom:1rem;}
+
+    .cartales-section-two .post p,
     .home-section-two .post p {padding:0 10px;}
-    .home-section-two .post p {padding:0 5px;margin-bottom:5px;}
+
+    .cartales-section-two .post .entry-header,
+    .home-section-two .post .entry-header {padding:0 5px;margin-bottom:5px;}
 
     .post-a-wrap {display:inline-block;}
-    .a-post-order-1 {}
+
     .a-post-order-2 {float:right;}
-    .a-post-order-3 {}
+
     .a-post-order-4 {float:right;}
 
   /*--SINGLE BLOG ARITCLE--*/
@@ -436,17 +454,48 @@ GREEN #6DBE4A
 
 /*@media all and  (max-width: 1024px) and (min-width: 300px) {}*/
 
+@media all and  (max-width: 1210px) and (min-width: 992px) {
+  body .site {width:99%;margin:auto;}
+  .post-a-wrap {width:49.8%;overflow: hidden;}
+}
+
 @media all and  (max-width: 992px) and (min-width: 300px) {
-  .main-navigation {margin-top:30px;width:100%;}
+  body .site {width:99%;margin:auto;}
+  .main-navigation {/*margin-top:30px;*/width:100%;margin-bottom:0;}
+  .cartales-section-one .recent-post,
   .home .recent-post {width: 100%;}
+  .post-a-wrap {width:49%;}
+
+  .main-navigation li {
+      padding:0;
+      width:20%;
+    }
+  .main-navigation .menu-slogan {margin-bottom:0;}
 }
 
 @media all and  (max-width: 665px) and (min-width: 300px) {
   .site-header .header-hgroup {width:40%;}
-  .home .recent-post, .home-section-two {width: 100%;}
+
+  .home .recent-post,
+  .category-car-tales .recent-post,
+  .home-section-two {width: 100%;}
+
   .home-section-three {width: 20%;margin-left: 35%;margin-bottom: 50px;}
-  .post-a-wrap {width:97.5%;margin:auto;}
+
+  .post-a-wrap {width:97.5%;margin:5px auto;}
   .a-post-order-2 {float:left;}
   .a-post-order-4 {float:left;}
 
+  .cartales-section-one img.wp-post-image,
+  .home-section-one img.wp-post-image {margin-left: -145px;}
+
+  .home-section-two img, .cartales-section-two img {width: 98%;}
+
+  .main-navigation .menu-slogan {text-align: center;}
+
+}
+
+@media all and  (max-width: 664px) and (min-width: 495px) {
+  .cartales-section-one img.wp-post-image,
+  .home-section-one img.wp-post-image {margin-left: 0px;}
 }

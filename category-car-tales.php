@@ -52,7 +52,7 @@ get_header(); ?>
 								<a href='<?php the_permalink(); ?>' title='<?php the_title(); ?>' alt='<?php the_title(); ?>'>
 									<article id="post-<?php the_ID() ?>" class="post post-<?php the_ID() ?> post-order-<?php echo $countDracula; ?>">
 										<?php
-											the_post_thumbnail( $size = 'post-thumbnail', $attr = '' );
+											the_post_thumbnail( $size = 'full', $attr = '' );
 										?>
 										<header class="entry-header">
 											<h1 class="entry-title"><?php the_title(); ?></h1>

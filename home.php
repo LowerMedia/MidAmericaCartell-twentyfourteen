@@ -52,7 +52,7 @@ get_header(); ?>
 							<?php endif; ?>
 								<a href='<?php the_permalink(); ?>' title='<?php the_title(); ?>' alt='<?php the_title(); ?>'>
 									<article id="post-<?php the_ID() ?>" class="post post-<?php the_ID() ?> post-order-<?php echo $countDracula; ?>">
-										<?php if ( has_post_thumbnail() ) {the_post_thumbnail('large');} else { ?>
+										<?php if ( has_post_thumbnail() ) {the_post_thumbnail('full');} else { ?>
 											<img width='960px' height='531px' src="<?php echo get_stylesheet_directory_uri(); ?>/no-img-1024x737.png" alt="<?php the_title(); ?>" />
 										<?php } ?>
 										<header class="entry-header">

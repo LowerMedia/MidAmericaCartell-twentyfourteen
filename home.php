@@ -35,9 +35,9 @@ get_header(); ?>
 							<?php endif; ?>
 								<a href='<?php the_permalink(); ?>' title='<?php the_title(); ?>' alt='<?php the_title(); ?>'>
 									<article id="post-<?php the_ID() ?>" class="post recent-post post-<?php the_ID() ?> post-order-<?php echo $countDracula; ?>">
-										<?php
-											the_post_thumbnail( $size = 'post-thumbnail', $attr = '' );
-										?>
+										<?php if ( has_post_thumbnail() ) {the_post_thumbnail('post-thumbnail');} else { ?>
+											<img width='470px' height='415px' src="<?php echo get_stylesheet_directory_uri(); ?>/no-img-1024x737.png" alt="<?php the_title(); ?>" />
+										<?php } ?>
 										<header class="entry-header">
 											<h1 class="entry-title"><?php the_title(); ?></h1>
 										</header>
@@ -52,9 +52,9 @@ get_header(); ?>
 							<?php endif; ?>
 								<a href='<?php the_permalink(); ?>' title='<?php the_title(); ?>' alt='<?php the_title(); ?>'>
 									<article id="post-<?php the_ID() ?>" class="post post-<?php the_ID() ?> post-order-<?php echo $countDracula; ?>">
-										<?php
-											the_post_thumbnail( $size = 'post-thumbnail', $attr = '' );
-										?>
+										<?php if ( has_post_thumbnail() ) {the_post_thumbnail('post-thumbnail');} else { ?>
+											<img width='960px' height='531px' src="<?php echo get_stylesheet_directory_uri(); ?>/no-img-1024x737.png" alt="<?php the_title(); ?>" />
+										<?php } ?>
 										<header class="entry-header">
 											<h1 class="entry-title"><?php the_title(); ?></h1>
 										</header>

@@ -9,9 +9,12 @@
  * @since Twenty Twelve 1.0
  */
 ?>
-    <?php
-      the_post_thumbnail('full');
-      if ( is_single() ) : ?>
+    
+	<?php if ( has_post_thumbnail() ) {the_post_thumbnail('full');} else { ?>
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/no-img-1024x737.png" alt="<?php the_title(); ?>" />
+	<?php } ?>
+
+   <?php if ( is_single() ) : ?>
         <header class="entry-header">
           <h1 class="entry-title"><?php the_title(); ?></h1>
           <div class='single-entry-meta'>

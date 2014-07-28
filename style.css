@@ -110,6 +110,7 @@ GREEN #6DBE4A
       box-shadow: none;
       margin:0;
       float:left;
+      margin-left:-85px;
     }
 
   img.header-image {

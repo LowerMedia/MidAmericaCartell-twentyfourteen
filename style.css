@@ -96,7 +96,7 @@ GREEN #6DBE4A
   body .site {
       padding:0 20px;
       margin: 0 auto;
-      width:75rem;
+      /*width:75rem;*/
     }
 
   body .site-content {width:100%;}

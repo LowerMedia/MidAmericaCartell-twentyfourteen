@@ -35,11 +35,7 @@ GREEN #6DBE4A
         display: none; 
     }
 
-
 /*----------H#----------*/
-
-  h1, h2, h3, h4, h5, h6 {}
-
   a, a:hover {
       color: #6DBE4A;
     }
@@ -50,6 +46,8 @@ GREEN #6DBE4A
       line-height: 1.2rem;
     }
 
+  .post p {padding:0 10px;}
+
   .green p {
       color: #6DBE4A;
     }
@@ -58,8 +56,8 @@ GREEN #6DBE4A
   .single-post .single-entry-meta {
       position: relative;
       vertical-align: baseline;
-      top: -60px;
       left: 20px;
+      color:black;
     }
 
   .single-entry-meta {
@@ -108,7 +106,9 @@ GREEN #6DBE4A
       max-width:1200px;
     }
 
-  body .site-content {width:100%;margin:0;}
+  body .site-content {width:99%;margin:0;}
+
+  body.home .site-content {width:100%;}
 
 /*----------HEADER----------*/
 
@@ -231,6 +231,7 @@ GREEN #6DBE4A
       width: 25%;
     }
 
+  .menu-toggle {margin:5px 0;}
 /*----------SOCIAL MEDIA MENU----------*/
 
 	.social-icons-list li {
@@ -409,8 +410,8 @@ GREEN #6DBE4A
     .cartales-section-two .post,
     .home-section-two .post {margin-bottom:1rem;}
 
-    .cartales-section-two .post p,
-    .home-section-two .post p {padding:0 10px;}
+    /*.cartales-section-two .post p,
+    .home-section-two .post p {padding:0 10px;}*/
 
     .cartales-section-two .post .entry-header,
     .home-section-two .post .entry-header {padding:0 5px;margin-bottom:5px;}
@@ -421,15 +422,16 @@ GREEN #6DBE4A
 
     .a-post-order-4 {float:right;}
 
+    .wp-caption.aligncenter {max-width:99%;}
+
   /*--SINGLE BLOG ARITCLE--*/
 
     .single .widget-area {float: left;width: 50%;}
 
     .single-post .entry-meta-item {
-        color: white;
         margin-right: 50px;
       }
-    .single-post .entry-meta-item a {color:white;}
+    .single-post .entry-meta-item a {color:black;}
 
     .single .site-content article {
         text-align: justify;
@@ -437,8 +439,8 @@ GREEN #6DBE4A
         width:100%;
       }
     
-    .single-post .entry-header .entry-title {color:white;}
-
+    .single-post .entry-header .entry-title {color:black;}
+    .single .entry-header {margin-bottom:20px;}
 /*----------FOOTER----------*/
 
     footer[role="contentinfo"] {
@@ -488,14 +490,16 @@ GREEN #6DBE4A
 
   .home-section-three {width: 20%;margin-left: 35%;margin-bottom: 50px;}
 
-  .post-a-wrap {width:97.5%;margin:5px auto;}
+  .post-a-wrap {width:98%;margin:5px auto;}
+  .post-a-wrap:first-of-type {margin:0 auto;}
   .a-post-order-2 {float:left;}
   .a-post-order-4 {float:left;}
 
   .cartales-section-one img.wp-post-image,
   .home-section-one img.wp-post-image {margin-left: -145px;}
 
-  .home-section-two img, .cartales-section-two img {width: 98%;}
+  .home-section-two img, 
+  .cartales-section-two img {width: 98%;}
 
   .main-navigation .menu-slogan {text-align: center;}
 

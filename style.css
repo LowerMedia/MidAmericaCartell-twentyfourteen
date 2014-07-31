@@ -210,9 +210,9 @@ GREEN #6DBE4A
       color: #6DBE4A;
     }
 
-  .main-navigation a:hover,
-  .main-navigation a:focus {
-      color: black;
+  .main-navigation .menu-item a:hover,
+  .main-navigation .menu-item a:focus {
+      color: #6DBE4A;
     }
 
   .main-navigation ul.nav-menu {border:none;}
@@ -236,15 +236,27 @@ GREEN #6DBE4A
   .menu-toggle {margin:5px 0;}
 
   .social-media-ul .li-facebook {
-    background-image: url('http://midamericacartell.com/wp-content/blog.dir/sites/37/2014/07/facebook-car-tales-mid-west-car-experts-blog.png');
+    background-image: url('/wp-content/blog.dir/sites/37/2014/07/facebook-car-tales-mid-west-car-experts-blog.png');
+  }
+
+  .social-media-ul .li-facebook:hover {
+    background-image: url("/wp-content/blog.dir/sites/37/2014/05/facebook_p360_100.png");
   }
 
   .social-media-ul .li-twitter {
-    background-image: url('http://midamericacartell.com/wp-content/blog.dir/sites/37/2014/07/twitter-car-tales-mid-west-car-experts-blog.png');
+    background-image: url('/wp-content/blog.dir/sites/37/2014/07/twitter-car-tales-mid-west-car-experts-blog.png');
+  }
+
+  .social-media-ul .li-twitter:hover {
+    background-image: url("/wp-content/blog.dir/sites/37/2014/05/twitter_p360_100.png");
   }
 
   .social-media-ul .li-instagram {
-    background-image: url('http://midamericacartell.com/wp-content/blog.dir/sites/37/2014/07/instagram-car-tales-mid-west-car-experts-blog.png');
+    background-image: url('/wp-content/blog.dir/sites/37/2014/07/instagram-car-tales-mid-west-car-experts-blog.png');
+  }
+
+  .social-media-ul .li-instagram:hover {
+    background-image: url("/wp-content/blog.dir/sites/37/2014/05/instagram_p360_100.png");
   }
 
   .main-navigation .social-media-ul li {

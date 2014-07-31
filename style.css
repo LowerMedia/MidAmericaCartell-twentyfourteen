@@ -117,9 +117,9 @@ GREEN #6DBE4A
   img.wp-post-image {
       border-radius: 0;
       box-shadow: none;
-      margin:0;
-      float:left;
-
+      margin:auto;
+      float:none;
+      display:block;
     }
 
   .home-section-one img.wp-post-image {

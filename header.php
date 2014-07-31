@@ -51,11 +51,20 @@
 				<span class='second-row spanrow grey'>culture from</span>
 				<span class='third-row spanrow green'>the midwest</span></h2>
 		</hgroup>
-
+		<!-- <nav id='social-media-nav' class='social-media-nav' >
+				<li id='' class='social-media-li' ><a id='' class='' href=''>Facebook</a></li>
+			</ul>
+			<ul id='social-media-ul' class='social-media-ul' >
+		</nav> -->
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<h3 class='green whitebk menu-slogan'><a href='/contact'>we want to tell your story</a></h3>
 			<h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
 			<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a>
+			<ul id='social-media-ul' class='social-media-ul' >
+				<li id='li-facebook' class='social-media-li li-facebook' ><a target='_blank' id='facebook-link' class='facebook-link social-media-link' href='http://facebook.com/MidAmericaCarTell'>Facebook</a></li>
+				<li id='li-twitter' class='social-media-li li-twitter' ><a target='_blank' id='twitter-link' class='twitter-link social-media-link' href='http://twitter.com/mid_cartell'>Twitter</a></li>
+				<li id='li-instagram' class='social-media-li li-instagram' ><a target='_blank' id='instagram-link' class='instagram-link social-media-link' href='http://instagram.com/mid_america_cartell'>Instagram</a></li>
+			</ul>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu greybk' ) ); ?>
 		</nav><!-- #site-navigation -->
 

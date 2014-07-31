@@ -187,18 +187,18 @@ GREEN #6DBE4A
       text-align: right;
       font-size: 120%;
       border-bottom: 2px solid #77777A;
-      margin-bottom: 55px;
+      margin-bottom: 75px;
       text-transform: uppercase;
       font-weight:500;
     }
 
-  .main-navigation li {
+  .menu-main-navigation-container li {
       padding: .5rem 0;
       margin: 0 1.5rem 0 0;
       font-size: 120%;
     }
 
-  .main-navigation li a {
+  .menu-main-navigation-container li a {
       color:white;
       font-weight:400;
     }
@@ -214,6 +214,8 @@ GREEN #6DBE4A
   .main-navigation a:focus {
       color: black;
     }
+
+  .main-navigation ul.nav-menu {border:none;}
 
   .nav-menu li:first-of-type {padding-left: 2.5rem;}
   .sub-menu li:first-of-type {padding-left: 0rem;}
@@ -232,6 +234,39 @@ GREEN #6DBE4A
     }
 
   .menu-toggle {margin:5px 0;}
+
+  .social-media-ul .li-facebook {
+    background-image: url('http://midamericacartell.com/wp-content/blog.dir/sites/37/2014/07/facebook-car-tales-mid-west-car-experts-blog.png');
+  }
+
+  .social-media-ul .li-twitter {
+    background-image: url('http://midamericacartell.com/wp-content/blog.dir/sites/37/2014/07/twitter-car-tales-mid-west-car-experts-blog.png');
+  }
+
+  .social-media-ul .li-instagram {
+    background-image: url('http://midamericacartell.com/wp-content/blog.dir/sites/37/2014/07/instagram-car-tales-mid-west-car-experts-blog.png');
+  }
+
+  .main-navigation .social-media-ul li {
+      background-position: 0px 7px;
+      margin: 0px;
+      background-size: 60px 60px;
+      padding: 0px;
+      width: 65px;
+      height: 75px;
+      display: inline-block;
+      background-repeat: no-repeat;
+    }
+
+  .main-navigation .social-media-ul li a {
+    height:74px;
+    width:75px;
+    display:block;
+    line-height: 0; 
+    font-size: 0;
+    color: transparent; 
+  }
+
 /*----------SOCIAL MEDIA MENU----------*/
 
 	.social-icons-list li {
@@ -459,7 +494,12 @@ GREEN #6DBE4A
 /*----------MEDIA QUERIES----------*/
 
 
-/*@media all and  (max-width: 1024px) and (min-width: 300px) {}*/
+@media all and  (min-width: 992px) {
+  .main-navigation .social-media-ul {
+    float:right;
+    margin-bottom:-74px;
+  }
+}
 
 @media all and  (max-width: 1210px) and (min-width: 992px) {
   body .site {width:99%;margin:auto;}
@@ -473,11 +513,23 @@ GREEN #6DBE4A
   .home .recent-post {width: 100%;}
   .post-a-wrap {width:49%;}
 
-  .main-navigation li {
+  ..menu-main-navigation-container li {
       padding:0;
       width:19%;
     }
     
+  .social-media-ul .li-facebook {
+    background-image: url('http://midamericacartell.com/wp-content/blog.dir/sites/37/2014/07/facebook-grey-car-tales-mid-west-car-experts-blog.png');
+  }
+
+  .social-media-ul .li-twitter {
+    background-image: url('http://midamericacartell.com/wp-content/blog.dir/sites/37/2014/07/twitter-grey-car-tales-mid-west-car-experts-blog.png');
+  }
+
+  .social-media-ul .li-instagram {
+    background-image: url('http://midamericacartell.com/wp-content/blog.dir/sites/37/2014/07/instagram-grey-car-tales-mid-west-car-experts-blog.png');
+  }
+
   .main-navigation .menu-slogan {margin-bottom:0;}
 }
 

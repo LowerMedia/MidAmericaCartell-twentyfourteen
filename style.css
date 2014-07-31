@@ -142,7 +142,7 @@ GREEN #6DBE4A
       float: left;
       width: 100%;
       clear: both;
-      padding:0;
+      padding:10px 0;
     }
 
   .logged-in .site {
@@ -488,6 +488,8 @@ GREEN #6DBE4A
     
     .single-post .entry-header .entry-title {color:black;}
     .single .entry-header {margin-bottom:20px;}
+
+    .single-post .entry-header .meta-tags {display:none;}
 /*----------FOOTER----------*/
 
     footer[role="contentinfo"] {
@@ -567,9 +569,14 @@ GREEN #6DBE4A
 
   .main-navigation .menu-slogan {text-align: center;}
 
+  .site-slogan .first-row {
+    font-weight: 300;
+    }
+
 }
 
 @media all and  (max-width: 664px) and (min-width: 495px) {
   .cartales-section-one img.wp-post-image,
   .home-section-one img.wp-post-image {margin-left: 0px;}
+  .header-img-wrap {width:185px;}
 }

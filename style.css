@@ -31,10 +31,10 @@ GREEN #6DBE4A
 .whitebk {background:#FFF;}
 
 /*HIDE THE SCROLLBAR*/
-  ::-webkit-scrollbar { 
+/*  ::-webkit-scrollbar { 
         display: none; 
     }
-
+*/
 /*----------H#----------*/
   a, a:hover {
       color: #6DBE4A;
@@ -183,14 +183,21 @@ GREEN #6DBE4A
       margin-top: -0.5rem;
     }
 
-  .main-navigation .menu-slogan {
+  .menu-slogan {
+      line-height: 1.428571429;
+      color: #7c7c7c;
       text-align: right;
       font-size: 120%;
       border-bottom: 2px solid #77777A;
-      margin-bottom: 75px;
       text-transform: uppercase;
       font-weight:500;
+      width:59%;
+      float:right;
+      font-family:"Raleway", arial, sans-serif;
+
     }
+
+  .menu-slogan a {text-decoration: none;}
 
   .menu-main-navigation-container li {
       padding: .5rem 0;
@@ -235,6 +242,17 @@ GREEN #6DBE4A
 
   .menu-toggle {margin:5px 0;}
 
+  .toggled-on .menu-item {
+    width: 100%;
+    text-align: center;
+    }
+
+  ul.toggled-on {
+  width: 100%;
+  }
+
+  .nav-menu.toggled-on li:first-of-type {padding-left:.5rem;}
+
   .social-media-ul .li-facebook {
     background-image: url('/wp-content/blog.dir/sites/37/2014/07/facebook-car-tales-mid-west-car-experts-blog.png');
   }
@@ -260,7 +278,6 @@ GREEN #6DBE4A
   }
 
   .main-navigation .social-media-ul li {
-      background-position: 0px 7px;
       margin: 0px;
       background-size: 60px 60px;
       padding: 0px;
@@ -513,11 +530,14 @@ GREEN #6DBE4A
     float:right;
     margin-bottom:-74px;
   }
+
+  .menu-slogan {margin-bottom: 75px;}
 }
 
 @media all and  (max-width: 1210px) and (min-width: 992px) {
   body .site {width:99%;margin:auto;}
   .post-a-wrap {width:49.8%;overflow: hidden;}
+  /*.menu-slogan {width:100%;}*/
 }
 
 @media all and  (max-width: 992px) and (min-width: 300px) {
@@ -526,6 +546,7 @@ GREEN #6DBE4A
   .cartales-section-one .recent-post,
   .home .recent-post {width: 100%;}
   .post-a-wrap {width:49%;}
+  .menu-slogan {width:100%;}
 
   ..menu-main-navigation-container li {
       padding:0;
@@ -548,6 +569,7 @@ GREEN #6DBE4A
 }
 
 @media all and  (max-width: 665px) and (min-width: 300px) {
+  .site-header {width:99%;}
   .site-header .header-hgroup {width:40%;}
 
   .home .recent-post,
@@ -576,6 +598,7 @@ GREEN #6DBE4A
 }
 
 @media all and  (max-width: 664px) and (min-width: 495px) {
+  .site-header {width:99%;}
   .cartales-section-one img.wp-post-image,
   .home-section-one img.wp-post-image {margin-left: 0px;}
   .header-img-wrap {width:185px;}

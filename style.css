@@ -444,6 +444,8 @@ GREEN #6DBE4A
     .category-car-tales .recent-post .wp-post-image {
         height:100%;
         width:auto;
+        max-height: 420px !important;
+        width: 624px;
         max-width:none;
       }
 

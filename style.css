@@ -254,27 +254,27 @@ GREEN #6DBE4A
   .nav-menu.toggled-on li:first-of-type {padding-left:.5rem;}
 
   .social-media-ul .li-facebook {
-    background-image: url('/wp-content/blog.dir/sites/37/2014/07/facebook-car-tales-mid-west-car-experts-blog.png');
+    background-image: url('img/facebook-car-tales-mid-west-car-experts-blog.png');
   }
 
   .social-media-ul .li-facebook:hover {
-    background-image: url("/wp-content/blog.dir/sites/37/2014/05/facebook_p360_100.png");
+    background-image: url("img/facebook-car-tales-mid-west-car-experts-blog-green.png");
   }
 
   .social-media-ul .li-twitter {
-    background-image: url('/wp-content/blog.dir/sites/37/2014/07/twitter-car-tales-mid-west-car-experts-blog.png');
+    background-image: url('img/twitter-car-tales-mid-west-car-experts-blog.png');
   }
 
   .social-media-ul .li-twitter:hover {
-    background-image: url("/wp-content/blog.dir/sites/37/2014/05/twitter_p360_100.png");
+    background-image: url("img/twitter-car-tales-mid-west-car-experts-blog-green.png");
   }
 
   .social-media-ul .li-instagram {
-    background-image: url('/wp-content/blog.dir/sites/37/2014/07/instagram-car-tales-mid-west-car-experts-blog.png');
+    background-image: url('img/instagram-car-tales-mid-west-car-experts-blog.png');
   }
 
   .social-media-ul .li-instagram:hover {
-    background-image: url("/wp-content/blog.dir/sites/37/2014/05/instagram_p360_100.png");
+    background-image: url("img/instagram-car-tales-mid-west-car-experts-blog-green.png");
   }
 
   .main-navigation .social-media-ul li {
